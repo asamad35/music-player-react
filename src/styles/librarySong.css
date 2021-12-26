@@ -1,0 +1,58 @@
+.library-song {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.4fr 1fr;
+      grid-template-columns: 0.4fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0 1rem 2rem;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.library-song .song-description {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.library-song .song-description h3 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.library-song img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.library-song:hover {
+  background-color: bisque;
+}
+
+.selected {
+  background: #f1c38b;
+}
+
+.library-song.selected:hover {
+  background: #f1c38b;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+}
+/*# sourceMappingURL=librarySong.css.map */

@@ -1,0 +1,45 @@
+.library-song {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0 1rem 2rem;
+  transition: 0.3s ease all;
+
+  .song-description {
+    display: grid;
+    gap: 0.5rem;
+    h3 {
+      align-self: end;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  &:hover {
+    background-color: bisque;
+  }
+}
+
+.selected {
+  background: rgb(241, 195, 139);
+}
+.library-song.selected:hover {
+  background: rgb(241, 195, 139);
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+}

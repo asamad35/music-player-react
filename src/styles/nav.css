@@ -1,0 +1,29 @@
+nav {
+  min-height: 10vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav button {
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 2px solid #414141;
+}
+
+nav button:hover {
+  background: #414141;
+  color: white;
+}
+/*# sourceMappingURL=nav.css.map */

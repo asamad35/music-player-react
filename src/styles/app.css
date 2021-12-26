@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  color: #353535;
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: #666666;
+}
+
+.app {
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+}
+
+.app.library-open {
+  margin-left: 30vw;
+}
+
+.song-container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.song-container img {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.song-container h2 {
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+.player {
+  min-height: 20vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.player .time-control {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+  gap: 1rem;
+}
+
+.player .time-control p {
+  padding: 1rem;
+}
+
+.player .time-control input {
+  width: 100%;
+  -webkit-appearance: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.player-control {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  width: 30%;
+}
+
+.player-control svg {
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+}
+
+.track {
+  background: lightblue;
+  width: 100%;
+  height: 1rem;
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.animate-track {
+  background: #c9cccc;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+.library {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 30vw;
+  background-color: white;
+  -webkit-box-shadow: 2px 2px 50px #aaaaaa;
+          box-shadow: 2px 2px 50px #aaaaaa;
+  overflow: scroll;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.library h2 {
+  padding: 3rem 3rem 0rem 3rem;
+}
+
+.library.library-open {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.library-songs {
+  padding-top: 3rem;
+}
+
+.library-song {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.4fr 1fr;
+      grid-template-columns: 0.4fr 1fr;
+  gap: 2rem;
+  padding: 1rem 0 1rem 2rem;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.library-song .song-description {
+  display: -ms-grid;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.library-song .song-description h3 {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+.library-song img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.library-song:hover {
+  background-color: bisque;
+}
+
+.selected {
+  background: #f1c38b;
+}
+
+.library-song.selected:hover {
+  background: #f1c38b;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(155, 155, 155, 0.5) transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+}
+
+nav {
+  min-height: 10vh;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav button {
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 2px solid #414141;
+}
+
+nav button:hover {
+  background: #414141;
+  color: white;
+}
+
+@media (width: 800px) {
+  .library-open {
+    width: 100vw;
+  }
+}
+/*# sourceMappingURL=app.css.map */

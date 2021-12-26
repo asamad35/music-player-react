@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CASpB;;AAXD,AAIE,eAJa,CAIb,GAAG,CAAC;EACF,KAAK,EAAE,GAAG;EACV,aAAa,EAAE,GAAG;CACnB;;AAPH,AAQE,eARa,CAQb,EAAE,CAAC;EACD,OAAO,EAAE,mBAAmB;CAC7B",
+    "sources": [
+        "song.scss"
+    ],
+    "names": [],
+    "file": "song.css"
+}

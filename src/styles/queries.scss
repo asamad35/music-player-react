@@ -1,0 +1,34 @@
+@media (max-width: 700px) {
+  .library.library-open {
+    width: 100vw;
+  }
+  .song-container {
+    img {
+      width: 40%;
+    }
+  }
+  .time-control {
+    width: 70% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .song-container {
+    padding-top: 2rem;
+    img {
+      width: 60%;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  .time-control {
+    width: 90% !important;
+  }
+  .player-control {
+    gap: 2rem;
+  }
+}
